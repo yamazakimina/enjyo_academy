@@ -1,0 +1,484 @@
+/* ここから下に記載していく */
+@charset "utf-8";
+/* @start */
+#splash {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(black 0%,red 50%,orange 100%);
+  text-align:center;
+  color:#fff;
+}
+/* end@start */
+/* @base */
+main{
+    cursor: url(../img/cheese.png), auto;
+}
+.shrine{
+    cursor: url(../img/nezumin.png), auto;
+}
+.wrapper{
+    min-width: 1200px;
+    overflow: hidden;
+    background-color: black;
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+.title{
+    text-align: center;
+    padding-bottom: 60px;
+    line-height: normal;
+    font-size: 18px;
+    color: #fff;
+}
+p{
+    text-align: center;
+    padding-bottom: 40px;
+    line-height: normal;
+    color: #fff;
+}
+a{
+    transition: color 0.3s;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+    color: red;
+}
+a:visited{
+    color: #fff;
+}
+/* end@base */
+
+/* @header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+    background-color: black;
+    color: white;
+}
+.header img{
+    height: 121px;
+    width: auto;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.header a:hover{
+    color: red;
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+}
+.header ul li{
+    margin: 80px 25px;
+}
+.header img{
+    margin: 25px;
+}
+/* end@header */
+
+/* @1 */
+.eyecatch{
+    background-image: url(../img/mainbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    max-width: 100%;
+    color: white;
+    padding-top: 200px;
+}
+.catchcopy{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.catchcopy_s{
+    font-size: 38px;
+}
+/* end@1 */
+
+/* @2 */
+#ABOUT h2{
+    color: red;
+}
+.slide-items{
+    margin-top: 40px;
+}
+.slide-items img{
+    margin: 0 10px;
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+#ABOUT .section{
+    padding-top: 40px;
+  }
+/* end@2 */
+
+/* @3 */
+.card{
+    line-height: 0;
+}
+.card_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_2{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.card_3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card p{
+    text-align: left;
+    padding-bottom: 0;
+}
+.card_image img{
+    width: 480px;
+}
+.card_text{
+    width: 430px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.card_text_2{
+    width: 430px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding-right: 50px;
+}
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+}
+/* end@3 */
+
+/* @4 */
+.news p{
+    width: 300px;
+    text-align: left;
+}
+.news img{
+    padding-bottom: 30px;
+    width: 100%;
+}
+.date{
+    padding-bottom: 24px;
+}
+.article_1{
+    width: 300px;
+    overflow: hidden;
+}
+.article_1:hover{
+    transform: scale(1.1);
+}
+.article{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 1fr;
+    text-align: center;
+    place-items: center;
+}
+.btn_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.btn_in{
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    background-color: red;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.more-list li:nth-child(3n-1){
+    margin: 0 1%;
+}
+.btn_in{
+    transition: color 0.3s;
+    text-decoration: none;
+}
+.btn_in:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+/* end@4 */
+
+/* @5 */
+.map{
+    margin-bottom: 60px;
+}
+.adress{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color: white;
+}
+td,th{
+    padding: 15px;
+}
+.access{
+    background-color: black;
+    padding-bottom: 60px;
+}
+/* end@5 */
+
+/* @6 */
+.form{
+    width: 750px;
+    margin:0 auto;
+    border-top: 3px double white;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    color: white;
+  }
+  .siru{
+    display: flex;
+  }
+  .item_1{    
+    padding-bottom: 8px;
+    padding-top: 8px;
+    display: flex;
+    border-bottom: 1px solid #cacaca;
+  }
+  .label_center{
+    display: inline-block;
+    width: 328px;
+    padding-left: 15px;
+    vertical-align:top;
+  }
+  .form input[type="text"], 
+  .form input[type="email"] {
+     padding: 8px;
+     width: 308px;
+ }
+ legend{
+    margin-bottom: 8px;
+ }
+ .form textarea{
+   height: 100px;
+   font-size: 14px;
+   width: 328px;
+ }
+.form select{
+   height: 36px;
+   width: 328px;
+   font-size: 16px;
+ }
+ .btn{
+   width: 300px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 30px;
+   padding-top: 30px;
+ }
+ .btn_out{
+    display: flex;
+    justify-content: center;
+    cursor: hand;
+ }
+ .form input[type="submit"]{
+    background: red;
+    color: white;
+    font-size:18px;
+    font-weight:bold;
+    padding: 10px 140px;
+    margin: 0 5px;
+    border: none;
+  }
+  .btn:hover{
+    transition: 0.3s;
+    opacity: 0.6;
+  }
+/* end@6 */
+
+/* 7 */
+.shrine{
+    background-color: black;
+}
+.sanpai{
+    padding-bottom: 0px;
+}
+.torii{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.torii img{
+    width: 30%;
+    height: auto;
+}
+.btn_shrine{
+    display: flex;
+    justify-content: center;
+}
+#mybtn{
+    margin-bottom: 90px;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    background-color: red;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+}
+button{
+    transition: color 0.3s;
+    text-decoration: none;
+}
+button:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.box-wrapper {
+    position: relative;
+    max-width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .box {
+    width: 100%;
+  }
+  .sanpai{
+    padding-bottom: 40px;
+  }
+
+  /* 落ち葉 */
+  .item {
+    position: absolute;
+    left: 50%;
+    /* transform: translate(-50%, 0); */
+    /* width: 15px;
+    height: 20px;
+    margin: 0 auto;
+    border-radius: 0% 70%; */
+    /* background: blue; */
+    /* opacity: 0; */
+  }
+  
+  @keyframes fall {
+    from {
+      opacity: 0;
+      top: -50px;
+    }
+  
+    20% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 1;
+      top: 100vh;
+    }
+  }
+  
+  @keyframes sway1 {
+    from {
+      transform: translate3d(0px, 0px, 0px) rotate(0deg);
+    }
+  
+    25% {
+      transform: translate3d(-50px, 0px, 0px) rotate(-10deg);
+    }
+  
+    75% {
+      transform: translate3d(50px, 0px, 0px) rotate(10deg);
+    }
+  
+    to {
+      transform: translate3d(0px, 0px, 0px) rotate(0deg);
+    }
+  }
+  .js-scroll-fall.is-animated .item {
+    animation: fall 4s linear forwards, sway1 4s ease-in-out alternate;
+  }
+  /* @グラデーション */
+  .shrine {
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(45deg, black,blue,white);/*グラデーションを定義*/
+    background-size: 200% 200%;/*サイズを大きくひきのばす*/
+    animation: bggradient 20s ease infinite;
+  }
+  
+  @keyframes bggradient{
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* end@グラデーション */
+/* @7 */
+
+/* fotter */
+footer{
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+/* end@footer */
+
+/* @smart phone */
+@media only screen and (max-width: 624px)  {
+.btn_more,.btn{
+     transition: transform .2s;
+ }
+.btn_more,.btn:active{
+     transform: scale(.95);
+}
+}
+/* end@smart phone */
